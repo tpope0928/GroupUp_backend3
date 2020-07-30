@@ -1,4 +1,5 @@
-class PlayerSerializer < ActiveModel::Serializer
+class PlayerSerializer
+  include FastJsonapi::ObjectSerializer
   belongs_to :game
-  attributes :username, :city, :state, :game_id
+  attributes :username, :city, :state, :game_id, :game
 end

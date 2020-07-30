@@ -3,7 +3,7 @@ class Api::V1::PlayersController < ApplicationController
   def index
     players = Player.all
     # render json: @syllabuses
-    render json: PlayerSerializer.new(players)
+    render json: players
   end
 end
 
@@ -21,4 +21,4 @@ private
 def player_params
   params.require(:player).permit(:username, :city, :state, :game_id)
 end
-end
+

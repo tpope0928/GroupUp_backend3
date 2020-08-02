@@ -8,11 +8,11 @@ class Api::V1::PlayersController < ApplicationController
   end
 
   def create
-    player.new(player_params)
-    if player.save
-      render json: player, status: :accepted
+    @player.new(player_params)
+    if @player.save
+      render json: @player, status: :accepted
     else
-      render json: { errors: player.errors.full_messages }, status: :unprocessible_entity
+      render json: { errors: @player.errors.full_messages }, status: :unprocessible_entity
     end
   end
 

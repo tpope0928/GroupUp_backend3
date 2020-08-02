@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Rails GroupUp_backend3: development" uuid="ad35ea28-bdb1-40c0-90e8-c2e465b18354">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/GroupUp_backend3_development</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails GroupUp_backend3: test" uuid="cacdc892-9097-4407-8be3-0daeabe9e1ff">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/GroupUp_backend3_test</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails GroupUp_backend3: production" uuid="0cbc061a-e54a-4b4a-86a4-e8e6986071d6">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/GroupUp_backend3_production</jdbc-url>
+    </data-source>
+  </component>
+</project>

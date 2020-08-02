@@ -7,11 +7,11 @@ class Api::V1::GamesController < ApplicationController
   end
 
   def create
-    @game.new(game_params)
-    if @game.save
-      render json: @game, status: :accepted
+    game = Game.new(game_params)
+    if game.save
+      render json: GameSerializer.new(game), status: :accepted
     else
-      render json: { errors: @game.errors.full_messages }, status: :unprocessible_entity
+      render json: {errors: game.errors.full_messages}, status: :unprocessible_entity
     end
   end
 

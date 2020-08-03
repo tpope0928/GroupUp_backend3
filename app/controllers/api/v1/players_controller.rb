@@ -9,10 +9,11 @@ class Api::V1::PlayersController < ApplicationController
 
   def create
     player = Player.new(player_params)
+    byebug
     if player.save
       render json: PlayerSerializer.new(player), status: :accepted
     else
-      render json: { errors: player.errors.full_messages }, status: :unprocessible_entity
+      render json: {errors: player.errors.full_messages}, status: :unprocessable_entity
     end
   end
 
